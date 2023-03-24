@@ -1,5 +1,5 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Lucas Osmond
+* Created on: March 2023
 * This file contains the CSS for index.html
 */
 .mdl-ripple {
@@ -13,19 +13,13 @@
 }
 
 .mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 25pt;
-  padding-top: 15pt;
+  padding-left: 55pt;
+  padding-right: 55pt;
+  padding-top: 35pt;
 }
 
 .mdl-textfield__error {
   color: red;
-}
-
-.page-content {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
 }
 
 .food {
@@ -35,10 +29,16 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: paleturquoise;
 }
 
 .mdl-layout-title {
   padding-left: 15pt;
   padding-right: 25pt;
+}
+
+.shape {
+  float: right;
+  width: 270px;
+  height: auto;
 }

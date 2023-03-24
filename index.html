@@ -30,35 +30,54 @@
           <span class="mdl-layout-title">Calculator</span>
         </div>
       </header>
+      <main class="mdl-layout__content">
         <!-- Simple Textfield -->
         <form action="#">
-          <p>Base</p>
+          <p>Hours Worked</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-of-triangle" />
-            <label class="mdl-textfield__label" for="base-of-triangle">base ...</label>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="hours-worked-per-week"
+            />
+            <label class="mdl-textfield__label" for="hours-worked-per-week"
+              >hours ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Height</p>
+          <p>Money per Hour</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-triangle" />
-            <label class="mdl-textfield__label" for="height-of-triangle">height ...</label>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="dollars-earned-per-hour"
+            />
+            <label class="mdl-textfield__label" for="dollars-earned-per-hour"
+              >$ ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
+        <div id="i-get"></div>
+        <div id="government-takes"></div>
         <br />
         <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()">
-          Calculate
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate Salary
         </button>
         <br />
         <div id="answers">
           <div id="area"></div>
         </div>
-        </main>
-        </div>
-        </body>
-        </html>
+      </main>
+    </div>
+  </body>
+</html>

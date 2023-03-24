@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Area Of Shapes" />
+    <meta name="keywords" content="ics2o" />
+    <meta name="author" content="Lucas Osmond" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title class="mdl-layout-header">Area Of Shapes</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fix-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Calculator</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content">Click The Button.</div>
+        <!-- Numeric Textfield with Floating Label -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="sample4"
+            />
+            <label class="mdl-textfield__label" for="sample4">Measurement (Units)</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
+        <!-- Coloured raised Button -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Calculate Area
+        </button>
+        <img src="./images/millie.jpg" alt="style" class="food" />
+      </main>
+    </div>
   </body>
 </html>

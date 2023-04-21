@@ -15,6 +15,6 @@ function calculate() {
   const taxFraud = (hours * rate) *  TAX_RATE
 
   //Output
-  document.getElementById('i-get').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-  document.getElementById('government-gets').innerHTML = `Your pay will be: $ ${taxFraud.toFixed(2)}`
+  document.getElementById('i-get').innerHTML = `Your pay will be: $${takeHomeSalary.toFixed(2)}`
+  document.getElementById('government-gets').innerHTML = `Your pay will be: $${taxFraud.toFixed(2)}`
 }
